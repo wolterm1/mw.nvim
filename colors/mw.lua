@@ -15,7 +15,7 @@ local c = {
 	parameter = "#e2e2e2",
 	error = "#c22121",
 	warning = "#c2aa21",
-	info = "#6796e6",
+	info = "#ffdd33",
 
 	selection = "#b0b0b0",
 	selection_match = "#707070",
