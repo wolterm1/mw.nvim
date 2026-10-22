@@ -23,6 +23,8 @@ local c = {
 }
 
 -- Editor
+--
+set(0, "Directory", { fg = "#ffdd33" })
 set(0, "Normal", { fg = c.fg, bg = c.bg })
 set(0, "NormalNC", { fg = c.fg, bg = c.bg })
 set(0, "NormalFloat", { fg = c.fg, bg = "#2d2d2d" })
