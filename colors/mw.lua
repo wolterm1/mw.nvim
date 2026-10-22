@@ -1,7 +1,6 @@
 vim.o.background = "dark"
 vim.cmd("highlight clear")
 vim.g.colors_name = "mw"
-vim.opt.guicursor:append("n-v-c:block-Cursor")
 
 local set = vim.api.nvim_set_hl
 local c = {
