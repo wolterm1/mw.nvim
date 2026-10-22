@@ -1,6 +1,6 @@
 vim.o.background = "dark"
 vim.cmd("highlight clear")
-vim.g.colors_name = "tsoding"
+vim.g.colors_name = "mw"
 
 local set = vim.api.nvim_set_hl
 local c = {
@@ -17,9 +17,8 @@ local c = {
 	warning = "#c2aa21",
 	info = "#6796e6",
 
-	-- VS Code's translucent colors composited over #181818.
-	selection = "#3d2f2f",
-	selection_match = "#302b2b",
+	selection = "#b0b0b0",
+	selection_match = "#707070",
 	word_match = "#2d2d2d",
 }
 
@@ -29,10 +28,11 @@ set(0, "NormalNC", { fg = c.fg, bg = c.bg })
 set(0, "NormalFloat", { fg = c.fg, bg = "#2d2d2d" })
 set(0, "FloatBorder", { fg = "#4c4c4c", bg = "#2d2d2d" })
 set(0, "Cursor", { fg = c.bg, bg = "#afadad" })
-set(0, "Visual", { bg = c.selection })
-set(0, "Search", { bg = c.selection })
-set(0, "CurSearch", { bg = c.selection })
-set(0, "IncSearch", { bg = c.selection })
+set(0, "Visual", { fg = c.bg, bg = c.selection })
+set(0, "VisualNOS", { link = "Visual" })
+set(0, "Search", { fg = c.bg, bg = c.selection })
+set(0, "CurSearch", { fg = c.bg, bg = c.selection })
+set(0, "IncSearch", { fg = c.bg, bg = c.selection })
 set(0, "MatchParen", { bg = c.word_match, bold = true })
 set(0, "LineNr", { fg = "#757575" })
 set(0, "CursorLineNr", { fg = c.fg, bold = true })
